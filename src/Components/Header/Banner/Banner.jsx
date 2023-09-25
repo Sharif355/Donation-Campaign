@@ -1,7 +1,9 @@
 const Banner = () => {
   return (
-    <div className="flex flex-col items-center justify-center my-40 ">
-      <h1 className="text-5xl font-bold">I Grow By Helping People In Need</h1>
+    <div className="flex flex-col items-center justify-center my-20 ">
+      <h1 className="text-5xl font-bold font-inter ">
+        I Grow By Helping People In Need
+      </h1>
       <div className="flex items-center mt-5 relative ">
         <input
           type="text"

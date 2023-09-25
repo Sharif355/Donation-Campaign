@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "image": "https://i.ibb.co/ZGVLdgB/Food.png",
+    "category": "Food",
+    "title": "Better Food for Everyone.",
+    "color": "orange",
+    "price": "$259.99",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714726",
+    "description": "Enjoy a variety of delicious and nutritious food options for everyone in the family. Our food products are sourced from local farmers and prepared with care to provide you with the best dining experience. From fresh produce to artisanal creations, our menu is designed to satisfy your cravings while promoting healthy eating habits. Discover a world of flavors that cater to all tastes and dietary preferences, ensuring memorable meals for you and your loved ones.",
+    "text_color": "#f87147"
+  },
+  {
+    "id": 2,
+    "image": "https://i.ibb.co/fMgqwZs/Clothing.png",
+    "category": "Clothing",
+    "title": "Used Clothing Drive.",
+    "color": "red",
+    "price": "$349.99",
+    "category_bg": "#79c23f33",
+    "card_bg": "#79c23f26",
+    "description": "Support our clothing drive and make a profound impact on the lives of those in need. Your generosity can provide warmth and comfort to individuals facing challenges. Whether you choose to donate gently-used clothing items or explore our selection of affordable and stylish options, you're contributing to a cause that touches lives and brings smiles. Together, we can create a brighter future through the power of clothing.",
+    "text_color": "#79c23f"
+  },
+  {
+    "id": 3,
+    "image": "https://i.ibb.co/Smt2BT4/Education.png",
+    "category": "Education",
+    "title": "Good education.",
+    "color": "green",
+    "price": "$299.99",
+    "category_bg": "#ff444a33",
+    "card_bg": "#ff444a26",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+    "text_color": "#ff444a"
+  },
+  {
+    "id": 4,
+    "image": "https://i.ibb.co/0fYfTz0/Health.png",
+    "category": "Health",
+    "title": "Clean water for children.",
+    "color": "blue",
+    "price": "$219.99",
+    "category_bg": "#0052ff33",
+    "card_bg": "#0052ff26",
+    "description": "Ensuring access to clean and safe drinking water for children in need is a critical mission. Your support can have a profound impact, significantly enhancing the health and well-being of young ones. By providing clean water, we're not just quenching their thirst; we're empowering them to thrive, learn, and grow, free from the burdens of waterborne illnesses and the worry of contaminated water sources.",
+    "text_color": "#0052FF"
+  },
+  {
+    "id": 5,
+    "image": "https://i.ibb.co/XJjHc8G/health2.jpg",
+    "category": "Health",
+    "title": "Clean water for children.",
+    "color": "blue",
+    "price": "$239.99",
+    "category_bg": "#0052ff33",
+    "card_bg": "#0052ff26",
+    "description": "Ensuring access to clean and safe drinking water for children in need is a critical mission. Your support can have a profound impact, significantly enhancing the health and well-being of young ones. By providing clean water, we're not just quenching their thirst; we're empowering them to thrive, learn, and grow, free from the burdens of waterborne illnesses and the worry of contaminated water sources.",
+    "text_color": "#0052FF"
+
+  },
+  {
+    "id": 6,
+    "image": "https://i.ibb.co/nfp1NZz/edu3.jpg",
+    "category": "Education",
+    "title": "Good education.",
+    "color": "green",
+    "price": "$279.99",
+    "category_bg": "#ff444a33",
+    "card_bg": "#ff444a26",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+    "text_color": "#ff444a"
+  },
+  {
+    "id": 7,
+    "image": "https://i.ibb.co/hd0fYRr/cloth2.jpg",
+    "category": "Clothing",
+    "title": "Used Clothing Drive.",
+    "color": "red",
+    "price": "$389.99",
+    "category_bg": "#79c23f33",
+    "card_bg": "#79c23f26",
+    "description": "Support our clothing drive and make a profound impact on the lives of those in need. Your generosity can provide warmth and comfort to individuals facing challenges. Whether you choose to donate gently-used clothing items or explore our selection of affordable and stylish options, you're contributing to a cause that touches lives and brings smiles. Together, we can create a brighter future through the power of clothing.",
+    "text_color": "#79c23f"
+  },
+  {
+    "id": 8,
+    "image": "https://i.ibb.co/NtB12MW/food2.jpg",
+    "category": "Food",
+    "title": "Better Food for Everyone.",
+    "color": "orange",
+    "price": "$289.99",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714726",
+    "description": "Enjoy a variety of delicious and nutritious food options for everyone in the family. Our food products are sourced from local farmers and prepared with care to provide you with the best dining experience. From fresh produce to artisanal creations, our menu is designed to satisfy your cravings while promoting healthy eating habits. Discover a world of flavors that cater to all tastes and dietary preferences, ensuring memorable meals for you and your loved ones.",
+    "text_color": "#f87147"
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/Y4SVGDD/edu2.jpg",
+    "category": "Education",
+    "title": "Good education.",
+    "color": "green",
+    "price": "$329.99",
+    "category_bg": "#ff444a33",
+    "card_bg": "#ff444a26",
+    "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential..",
+    "text_color": "#ff444a"
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/vdc8wZW/health3.jpg",
+    "category": "Health",
+    "title": "Clean water for children.",
+    "color": "blue",
+    "price": "$259.99",
+    "category_bg": "#0052ff33",
+    "card_bg": "#0052ff26",
+    "description": "Ensuring access to clean and safe drinking water for children in need is a critical mission. Your support can have a profound impact, significantly enhancing the health and well-being of young ones. By providing clean water, we're not just quenching their thirst; we're empowering them to thrive, learn, and grow, free from the burdens of waterborne illnesses and the worry of contaminated water sources.",
+    "text_color": "#0052FF"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/wMk7cDz/cloth3.jpg",
+    "category": "Clothing",
+    "title": "Used Clothing Drive.",
+    "color": "red",
+    "price": "$329.99",
+    "category_bg": "#79c23f33",
+    "card_bg": "#79c23f26",
+    "description": "Support our clothing drive and make a profound impact on the lives of those in need. Your generosity can provide warmth and comfort to individuals facing challenges. Whether you choose to donate gently-used clothing items or explore our selection of affordable and stylish options, you're contributing to a cause that touches lives and brings smiles. Together, we can create a brighter future through the power of clothing.",
+    "text_color": "#79c23f"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/NSfMPjC/food3.jpg",
+    "category": "Food",
+    "title": "Better Food for Everyone.",
+    "color": "orange",
+    "price": "$379.99",
+    "category_bg": "#f8714733",
+    "card_bg": "#f8714726",
+    "description": "Enjoy a variety of delicious and nutritious food options for everyone in the family. Our food products are sourced from local farmers and prepared with care to provide you with the best dining experience. From fresh produce to artisanal creations, our menu is designed to satisfy your cravings while promoting healthy eating habits. Discover a world of flavors that cater to all tastes and dietary preferences, ensuring memorable meals for you and your loved ones.",
+    "text_color": "#f87147"
+  }]
+    
