@@ -14,9 +14,12 @@ const HomeCards = ({ data }) => {
         >
           {category}
         </button>
-        <h3 className="text-xl mx-4 pb-3" style={{ color: text_color }}>
+        <h5
+          className="text-sm md:text-lg lg:text-xl mx-2 md:mx-2 lg:mx-4 pb-3"
+          style={{ color: text_color }}
+        >
           {title}
-        </h3>
+        </h5>
       </div>
     </Link>
   );
