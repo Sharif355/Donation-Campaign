@@ -2,7 +2,7 @@ import ChartPie from "./ChartPie";
 
 const Statistics = () => {
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto ">
       <ChartPie></ChartPie>
     </div>
   );

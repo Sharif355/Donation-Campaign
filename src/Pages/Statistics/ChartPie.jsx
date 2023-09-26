@@ -1,36 +1,24 @@
-import { useEffect, useState } from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import Chart from "react-google-charts";
 
 const ChartPie = () => {
-  const [chartDonation, setChartDonation] = useState([]);
-
-  useEffect(() => {
-    const donations = JSON.parse(localStorage.getItem("Donations"));
-    if (donations) {
-      setChartDonation(donations);
-    }
-  }, []);
-  const totalDonation = 12;
-  const yourDonation = totalDonation / chartDonation.length;
-
+  const data = [
+    ["Task", "Hours per Day"],
+    ["YourDonation", 4],
+    ["TotalDonation", 12],
+  ];
   return (
-    <div>
-      <h2>length: {yourDonation}</h2>
-      <PieChart width={400} height={400}>
-        <Pie
-          cx="totalDonation"
-          cy="yourDonation"
-          data={yourDonation}
-          labelLine={false}
-          outerRadius={80}
-          fill="#8884d8"
-          dataKey="value"
-        >
-          {/* {data.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))} */}
-        </Pie>
-      </PieChart>
+    <div className="flex justify-center border border-red-100">
+      <Chart
+        width={"1000px"}
+        height={"1000px"}
+        chartType="PieChart"
+        loader={<div>Loading Chart</div>}
+        data={data}
+        options={{
+          is3D: true,
+        }}
+        rootProps={{ "data-testid": "2" }}
+      ></Chart>
     </div>
   );
 };

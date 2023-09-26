@@ -1,6 +1,12 @@
+import { useEffect, useState } from "react";
+
 const Banner = () => {
+  const [search, setSearch] = useState([]);
+
+  useEffect(() => {}, []);
+
   return (
-    <div className="flex flex-col items-center justify-center my-20 ">
+    <div className="flex flex-col items-center justify-center ">
       <h1 className=" text-base md:text-xl lg:text-5xl font-bold font-inter ">
         I Grow By Helping People In Need
       </h1>
