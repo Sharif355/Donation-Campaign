@@ -10,12 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "apexcharts": "^3.42.0",
+    "chart.js": "^4.4.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.16.0",
     "react-toastify": "^9.1.3",
+    "recharts": "^2.8.0",
     "sort-by": "^0.0.2"
   },
   "devDependencies": {
