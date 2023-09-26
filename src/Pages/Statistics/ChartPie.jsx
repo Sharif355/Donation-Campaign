@@ -1,21 +1,35 @@
+import { useEffect, useState } from "react";
 import Chart from "react-google-charts";
 
 const ChartPie = () => {
-  const data = [
-    ["Task", "Hours per Day"],
-    ["YourDonation", 4],
-    ["TotalDonation", 12],
-  ];
+  const [donation, setDonation] = useState([]);
+
+  useEffect(() => {
+    const donations = JSON.parse(localStorage.getItem("Donations"));
+
+    if (donations) {
+      setDonation(donations);
+    }
+  }, []);
+
+  const totalDonation = 12 - donation.length;
+  const yourDonation = donation.length;
+
   return (
-    <div className="flex justify-center border border-red-100">
+    <div className="flex justify-center ">
       <Chart
-        width={"1000px"}
-        height={"1000px"}
+        width={"100%"}
+        height={"500px"}
         chartType="PieChart"
         loader={<div>Loading Chart</div>}
-        data={data}
+        data={[
+          ["Label", "Value"],
+          ["Total Donation", totalDonation],
+          ["Your Donation", yourDonation],
+        ]}
         options={{
           is3D: true,
+          colors: ["#FF444A", "#00C49F"],
         }}
         rootProps={{ "data-testid": "2" }}
       ></Chart>

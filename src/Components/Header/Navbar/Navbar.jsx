@@ -3,7 +3,6 @@ import Banner from "../Banner/Banner";
 
 const Navbar = () => {
   const location = useLocation();
-  console.log(location);
 
   const isHome = location.pathname === "/";
 
