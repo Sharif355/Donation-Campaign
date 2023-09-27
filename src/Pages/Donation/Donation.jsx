@@ -25,7 +25,16 @@ const Donation = () => {
   return (
     <div>
       {noDonation ? (
-        <p className="text-center text-2xl">No Data Found!</p>
+        <div className="flex flex-col justify-center items-center space-y-2">
+          <img
+            className="w-64"
+            src="https://i.ibb.co/pPBcxDr/cartoon-empty-box-free-vector.jpg"
+            alt=""
+          />
+          <p className="text-center text-2xl font-inter font-bold ">
+            No Donation Yet!
+          </p>{" "}
+        </div>
       ) : (
         <div>
           <div className="flex justify-center">

@@ -16,7 +16,7 @@ const ChartPie = () => {
   const yourDonation = donation.length;
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center font-inter font-semibold ">
       <Chart
         width={"100%"}
         height={"500px"}

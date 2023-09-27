@@ -9,7 +9,7 @@ const Navbar = () => {
     <div>
       {/* Navbar */}
       <div
-        className={`  flex flex-col lg:flex-row gap-5 md:gap-0 md:flex-row items-center justify-between  container mx-auto py-10 ${
+        className={`  flex flex-col lg:flex-row gap-5 md:gap-0 md:flex-row items-center justify-between font-inter container mx-auto py-10 ${
           isHome ? "block" : "block"
         }`}
       >

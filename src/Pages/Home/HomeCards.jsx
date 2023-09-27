@@ -6,7 +6,10 @@ const HomeCards = ({ data }) => {
 
   return (
     <Link to={`/donations/${id}`}>
-      <div className="border rounded-lg " style={{ backgroundColor: card_bg }}>
+      <div
+        className="border rounded-lg font-inter "
+        style={{ backgroundColor: card_bg }}
+      >
         <img className="w-full h-[194px]" src={image} alt={category} />
         <button
           style={{ backgroundColor: category_bg, color: text_color }}

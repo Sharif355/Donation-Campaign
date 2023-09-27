@@ -34,7 +34,7 @@ const Donations = ({ donation }) => {
   };
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto font-inter">
       <div className="">
         <img className="w-full h-[50vh] relative " src={image} alt={category} />
         <div className="border border-black top-[400px] lg:top-[525px] absolute w-full container p-5 bg-[#0b0b0b80]">

@@ -13,7 +13,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center   md:w-full ">
+    <div className="flex flex-col items-center justify-center  font-inter md:w-full ">
       <h1 className=" text-base md:text-xl lg:text-5xl font-bold font-inter ">
         I Grow By Helping People In Need
       </h1>
