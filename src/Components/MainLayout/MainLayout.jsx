@@ -1,11 +1,18 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigation } from "react-router-dom";
 import Navbar from "../Header/Navbar/Navbar";
 
 const MainLayout = () => {
+  const navigation = useNavigation();
   return (
-    <div>
+    <div className="px-2">
       <Navbar></Navbar>
-      <Outlet></Outlet>
+      {navigation.state === "loading" ? (
+        <p className="text-center">
+          <span className="loading loading-spinner text-info  "></span>
+        </p>
+      ) : (
+        <Outlet />
+      )}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DonationCard from "./DonationCard";
+import { useNavigation } from "react-router-dom";
 
 const Donation = () => {
   const [donations, setDonations] = useState([]);
@@ -14,6 +15,8 @@ const Donation = () => {
       setNoDonation("No Data Found");
     }
   }, []);
+
+  const navigation = useNavigation();
 
   const handleDeleteAllDonation = () => {
     localStorage.clear(), setDonations([]), setNoDonation("No Data Found");
@@ -33,23 +36,31 @@ const Donation = () => {
               Delete All Donation
             </button>
           </div>
-          <div className="grid grid-cols-2 gap-5 container mx-auto ">
-            {seeAll
-              ? donations.map((donation) => (
-                  <DonationCard
-                    key={donation.id}
-                    donation={donation}
-                  ></DonationCard>
-                ))
-              : donations
-                  .slice(0, 4)
-                  .map((donation) => (
+
+          {navigation.state === "loading" ? (
+            <p className="text-center">
+              <span className="loading loading-spinner text-info  "></span>
+            </p>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5 container mx-auto ">
+              {seeAll
+                ? donations.map((donation) => (
                     <DonationCard
                       key={donation.id}
                       donation={donation}
                     ></DonationCard>
-                  ))}
-          </div>
+                  ))
+                : donations
+                    .slice(0, 4)
+                    .map((donation) => (
+                      <DonationCard
+                        key={donation.id}
+                        donation={donation}
+                      ></DonationCard>
+                    ))}
+            </div>
+          )}
+
           <div className="flex justify-center">
             <button
               onClick={() => setSeeAll(!seeAll)}

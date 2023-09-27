@@ -1,5 +1,4 @@
 import { NavLink, useLocation } from "react-router-dom";
-import Banner from "../Banner/Banner";
 
 const Navbar = () => {
   const location = useLocation();
@@ -7,25 +6,10 @@ const Navbar = () => {
   const isHome = location.pathname === "/";
 
   return (
-    <div
-      className={`hero ${
-        isHome ? "h-[50vh]" : "h-[20vh]"
-      } bg-cover relative   ${isHome ? " mb-32 " : ""}
-      } `}
-      style={{
-        backgroundImage: isHome
-          ? "url(https://i.ibb.co/JjVdF42/Rectangle-4281.png)"
-          : "none",
-      }}
-    >
-      <div
-        className={` hero-overlay bg-opacity-90 bg-slate-100  ${
-          isHome ? "block" : "hidden"
-        }`}
-      ></div>
+    <div>
       {/* Navbar */}
       <div
-        className={`  absolute top-0 flex flex-col gap-5 md:gap-0 md:flex-row items-center justify-between  container mx-auto py-10 ${
+        className={`  flex flex-col lg:flex-row gap-5 md:gap-0 md:flex-row items-center justify-between  container mx-auto py-10 ${
           isHome ? "block" : "block"
         }`}
       >
@@ -80,13 +64,6 @@ const Navbar = () => {
               </NavLink>
             </li>
           </ul>
-        </div>
-      </div>
-      <div>
-        <div className=" ">
-          <div className={`text-black ${isHome ? "block" : "hidden"}`}>
-            <Banner></Banner>
-          </div>
         </div>
       </div>
     </div>

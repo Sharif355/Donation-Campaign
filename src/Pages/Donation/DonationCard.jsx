@@ -4,12 +4,16 @@ const DonationCard = ({ donation }) => {
   const { image, category, title, price, text_color, card_bg, category_bg } =
     donation;
   return (
-    <div className=" flex rounded-l-lg  ">
-      <img className="w-56" src={image} alt={category} />
+    <div className=" flex flex-col md:flex-row   items-center justify-center rounded-l-lg  ">
+      <img
+        className="w-60 md:w-56 h-48 lg:h-full "
+        src={image}
+        alt={category}
+      />
 
       <div
         style={{ backgroundColor: card_bg }}
-        className="flex flex-col items-start p-6 justify-start rounded-lg lg:w-full "
+        className="flex flex-col items-start p-6 justify-start rounded-lg  w-60 md:w-full  "
       >
         <button
           style={{ backgroundColor: category_bg, color: text_color }}

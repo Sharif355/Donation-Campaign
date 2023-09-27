@@ -37,7 +37,7 @@ const Donations = ({ donation }) => {
     <div className="container mx-auto">
       <div className="">
         <img className="w-full h-[50vh] relative " src={image} alt={category} />
-        <div className="border border-black top-[525px] absolute w-full container p-5 bg-[#0b0b0b80]">
+        <div className="border border-black top-[400px] lg:top-[525px] absolute w-full container p-5 bg-[#0b0b0b80]">
           <button
             style={{ backgroundColor: text_color }}
             className="btn text-white normal-case "

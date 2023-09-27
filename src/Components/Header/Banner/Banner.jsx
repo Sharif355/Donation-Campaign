@@ -1,31 +1,38 @@
 import { useEffect, useState } from "react";
 
 const Banner = () => {
-  const [search, setSearch] = useState([]);
+  const [search, setSearch] = useState(null);
 
-  useEffect(() => {}, []);
+  const handleSearch = (e) => {
+    e.preventDefault();
+    setSearch(e.target.text.value);
+  };
 
-  const handleSearch = () => {
-    console.log("hello");
+  const handleSubmit = () => {
+    console.log("s");
   };
 
   return (
-    <div className="flex flex-col items-center justify-center ">
+    <div className="flex flex-col items-center justify-center   md:w-full ">
       <h1 className=" text-base md:text-xl lg:text-5xl font-bold font-inter ">
         I Grow By Helping People In Need
       </h1>
-      <div className="flex items-center mt-5 relative ">
-        <input
-          type="text"
-          placeholder="Search here..."
-          className="input input-bordered lg:w-[450px] max-w-lg  "
-        />
-        <button
-          onClick={handleSearch}
-          className="btn btn-error normal-case text-white absolute -right-7  rounded-r-lg"
-        >
-          Search
-        </button>
+      <div className="flex flex-row items-center mt-5 relative ">
+        <form onSubmit={handleSubmit}>
+          <input
+            onChange={handleSearch}
+            className=" py-2 md:py-5 w-48 md:w-96  "
+            type="text"
+            name="text"
+            id=""
+          />
+          <input
+            className="p-2 md:p-5 border bg-red-500 text-white "
+            type="submit"
+            name="submit"
+            value="Search"
+          />
+        </form>
       </div>
     </div>
   );
